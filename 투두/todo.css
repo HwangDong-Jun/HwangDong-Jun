@@ -1,0 +1,93 @@
+  @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Black Han Sans', sans-serif;
+  }
+
+  .all{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title{
+    font-size: 5rem;
+    color:blue ;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 50px 0;
+  }
+
+  .todo-container{
+    width: 700px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 10px 40px;
+  }
+
+  .content{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 30px;
+  }
+
+  .todo-input{
+    font-size: 1.5rem;
+    border: solid 1px black;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px;
+  }
+
+  .add-button{
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 20px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
+  .add-button.active{
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+  .item{
+    width: 100%;
+
+  }
+  .work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin: 50px 0;
+    font-size: 1rem;
+    box-shadow: 0 5px 30px rgb(0, 0, 0, 0.5);
+  }
+
+  .work.completed p{
+    text-decoration: line-through;
+    color: gray
+  }
+
+  .work p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.work button{
+    font-size: 1.5rem;
+    border: none;
+
+}
